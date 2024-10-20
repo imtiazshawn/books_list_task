@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book List</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Books List</h1>
+      <div class="nav_items">
+        <div class="nav_item">
+          <!-- <span class="material-symbols-outlined">
+            home
+          </span> -->
+          <a href="index.html">Home</a>
+        </div>
+        <div class="nav_item">
+          <!-- <span class="material-symbols-outlined">
+            favorite
+          </span> -->
+          <a href="wishlist.html">WishList</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <section id="controls">
+    <input type="text" id="search-bar" placeholder="Search books by title...">
+    <select id="genre-filter">
+      <option value="">All Genres</option>
+    </select>
+  </section>
+  
+  <section id="book-list"></section>
+
+  <div id="pagination">
+    <button id="prev-page">Previous</button>
+    <span id="page-number"></span>
+    <button id="next-page">Next</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
